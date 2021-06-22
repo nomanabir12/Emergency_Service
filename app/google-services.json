@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575569989371",
+    "project_id": "emargenyservice",
+    "storage_bucket": "emargenyservice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575569989371:android:a3eb10cdeb030e7c85aa5e",
+        "android_client_info": {
+          "package_name": "com.example.emargenyservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575569989371-29ruape3ugj2l3rid2u7nc6564i2tlbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8YU8kBKDyhSDMrMhA1U5ekdRhvcFl0lY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575569989371-29ruape3ugj2l3rid2u7nc6564i2tlbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

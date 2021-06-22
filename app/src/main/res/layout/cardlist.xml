@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/space_10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="@dimen/space_10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_margin="@dimen/space_5dp"
+            android:layout_width="match_parent"
+            android:text="Hospital Name"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_height="@dimen/space_50dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:id="@+id/ammount"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:textColor="#004D40"
+
+            ></TextView>
+
+        //4
+
+        <TextView
+            android:id="@+id/name_hosi"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/space_50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/space_5dp"
+            android:layout_marginRight="@dimen/space_5dp"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center_vertical"
+            android:text="Hospital Name"
+            android:textAlignment="center"
+            android:textColor="#004D40"
+            android:textSize="@dimen/space_20dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+            android:layout_margin="@dimen/space_5dp"
+            android:layout_width="match_parent"
+            android:text="Hospital Address"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_height="@dimen/space_50dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:id="@+id/adress"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:textColor="#CA3C31"
+
+            ></TextView>
+        <TextView
+            android:layout_marginLeft="@dimen/space_5dp"
+            android:layout_marginRight="@dimen/space_5dp"
+
+            android:layout_width="match_parent"
+            android:text="Hospital Name"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_height="@dimen/space_70dp"
+            android:textSize="@dimen/space_16dp"
+            android:textStyle="bold"
+            android:id="@+id/hospital_address"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:textColor="#CA3C31"
+
+            ></TextView>
+        //6
+        <TextView
+            android:layout_margin="@dimen/space_5dp"
+            android:layout_width="match_parent"
+            android:text="Hospital Address"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_height="@dimen/space_50dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:id="@+id/adress1"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:textColor="#251412"
+
+            ></TextView>
+        <TextView
+            android:layout_marginLeft="@dimen/space_5dp"
+            android:layout_marginRight="@dimen/space_5dp"
+
+            android:layout_width="match_parent"
+            android:text="Hospital Name"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_height="@dimen/space_50dp"
+            android:textSize="@dimen/space_16dp"
+            android:textStyle="bold"
+            android:id="@+id/hospital_address1"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:textColor="#3E1613"
+
+            ></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

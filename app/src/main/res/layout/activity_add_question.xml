@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/grey_light"
+    tools:context=".Add_question">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_light"
+        android:id="@+id/scroll"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="400dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#fff"
+                android:elevation="2dp"
+                >
+                <LinearLayout
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+
+                    >
+                    <TextView
+                        android:id="@+id/profile_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="Add New Service Details"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/imageView"
+                        android:textColor="#000"
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#000"
+                        android:textSize="19dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginRight="50dp"
+                        android:id="@+id/s"
+
+                        >
+
+                    </TextView>
+
+                    <EditText
+
+                        android:id="@+id/Email_Log"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/s"
+                        android:layout_marginLeft="20dp"
+                        android:maxLines="1"
+
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/text_input_bg"
+                        android:gravity="left"
+                        android:hint="Enter Name"
+                        android:textColor="#000"
+                        android:inputType="text"
+
+                        android:textSize="20dp">
+
+                    </EditText>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#000"
+                        android:textSize="19dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginRight="50dp"
+                        android:id="@+id/s1"
+
+                        >
+
+                    </TextView>
+
+                    <EditText
+
+                        android:id="@+id/Email_Log1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/s"
+                        android:layout_marginLeft="20dp"
+                        android:maxLines="1"
+                        android:inputType="textImeMultiLine"
+
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/text_input_bg"
+                        android:gravity="left"
+                        android:hint="Enter Address"
+                        android:textColor="#000"
+
+                        android:textSize="20dp">
+                    </EditText>
+                    //3
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PhoneNumber"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#000"
+                        android:textSize="19dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginRight="50dp"
+                        android:id="@+id/ssss"
+
+                        >
+
+                    </TextView>
+
+                    <EditText
+
+                        android:id="@+id/Email_Log221"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/s"
+                        android:layout_marginLeft="20dp"
+                        android:maxLines="1"
+                        android:inputType="phone"
+
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/text_input_bg"
+                        android:gravity="left"
+                        android:hint="Enter PhoneNumber"
+                        android:textColor="#000"
+
+                        android:textSize="20dp">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/tmio_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+
+        android:layout_marginTop="650dp"
+        android:layout_alignParentBottom="false"
+        android:background="@drawable/primary_btn_bg"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Add Service"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+
+        />
+
+</RelativeLayout>

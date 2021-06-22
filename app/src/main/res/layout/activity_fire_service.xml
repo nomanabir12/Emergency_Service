@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fire_service">
+    <RelativeLayout
+        android:id="@+id/r22222"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="681dp"
+
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:title="Fire Service"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.recyclerview.widget.RecyclerView
+
+
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="@dimen/space_10dp"
+            android:layout_marginLeft="@dimen/space_10dp"
+            android:layout_marginBottom="@dimen/space_10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/blog_list_view"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

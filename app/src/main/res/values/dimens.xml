@@ -1,0 +1,104 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="space_5dp">5dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_10dp">10dp</dimen>
+    <dimen name="space_15dp">15dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_20dp">20dp</dimen>
+    <dimen name="space_50dp">50dp</dimen>
+    <dimen name="space_70dp">70dp</dimen>
+
+    <dimen name="size_12sp">12sp</dimen>
+    <dimen name="size_14sp">14sp</dimen>
+    <dimen name="size_16sp">16sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_header_dimen">100dp</dimen>
+    <dimen name="image_header_top_margin">50dp</dimen>
+    <dimen name="login_layout_padding">8dp</dimen>
+    <dimen name="login_layout_padding_top">36dp</dimen>
+    <dimen name="login_button_margin">16dp</dimen>
+
+    <dimen name="nav_header_height">250dp</dimen>
+    //new
+
+    <dimen name="activity_horizontal_margin_big_activity">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="app_bar_height_image_view">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_margin_small">8dp</dimen>
+    <dimen name="text_margin_very_small">4dp</dimen>
+    <dimen name="btn_padding">20dp</dimen>
+    <dimen name="btn_margin">14dp</dimen>
+    <dimen name="my_app_bar_height">128dp</dimen>
+    <dimen name="my_app_bar_overlap">56dp</dimen>
+
+    <dimen name="card_margin_horizontal">8dp</dimen>
+    <dimen name="card_margin_vertical">8dp</dimen>
+    <dimen name="card_margin_horizontal_big_activity">8dp</dimen>
+    <dimen name="card_margin_vertical_big_activity">4dp</dimen>
+    <dimen name="card_recycler_corner_radius">2dp</dimen>
+    <dimen name="card_recycler_elevation">2dp</dimen>
+
+    <dimen name="main_card_margin_horizontal">8dp</dimen>
+    <dimen name="my_apps_card_margin_horizontal">16dp</dimen>
+    <dimen name="main_card_margin_vertical">8dp</dimen>
+    <dimen name="main_card_margin_horizontal_big_activity">8dp</dimen>
+
+    <dimen name="card_title_margin_top">15dp</dimen>
+    <dimen name="card_title_margin">80dp</dimen>
+    <dimen name="card_subtitle_margin">16dp</dimen>
+    <dimen name="card_button_margin">8dp</dimen>
+
+    <dimen name="zero_horizontal_margin">0dp</dimen>
+    <dimen name="zero_horizontal_margin_big_activity">0dp</dimen>
+
+    <dimen name="start_page_image_size">144dp</dimen>
+    <dimen name="share_view_round_margin">16dp</dimen>
+
+    <dimen name="big_activity_margin_vertical">96dp</dimen>
+    <dimen name="big_activity_margin_horizontal">72dp</dimen>
+    <dimen name="big_activity_fab_margin">16dp</dimen>
+    <dimen name="big_activity_text_margin">16dp</dimen>
+    //video
+    <dimen name="fab_margin1">16dp</dimen>
+    <dimen name="logo_w_h">100dp</dimen>
+
+    <dimen name="standard_field_width">160dp</dimen>
+    <dimen name="img_login_margin">30dp</dimen>
+    <dimen name="email_field_margin">10dp</dimen>
+    <dimen name="password_field_margin">10dp</dimen>
+    <dimen name="btn_login_margin">20dp</dimen>
+    <dimen name="btn_signup_text_size">15sp</dimen>
+    <dimen name="progress_bar_size">30dp</dimen>
+    <dimen name="progress_bar_margin">20dp</dimen>
+    <dimen name="recyclerview_padding">8dp</dimen>
+    <dimen name="fab_margin_right">24dp</dimen>
+    <dimen name="fab_margin_bottom">43dp</dimen>
+    <dimen name="comment_form_margin">10dp</dimen>
+    <dimen name="width_0dp">0dp</dimen>
+    <dimen name="field_post_title_margin">16dp</dimen>
+    <dimen name="field_post_title_margin_bottom">5dp</dimen>
+    <dimen name="field_post_link_margin_bottom_top">5dp</dimen>
+    <dimen name="field_post_link_margin_left_right">16dp</dimen>
+    <dimen name="btn_sign_in_margin">20dip</dimen>
+    <dimen name="post_author_margin">10dp</dimen>
+    <dimen name="post_body_margin">15dp</dimen>
+    <dimen name="post_title_margin_top">7dp</dimen>
+    <dimen name="comment_photo_size">32dp</dimen>
+    <dimen name="comment_layout_margin">10dp</dimen>
+    <dimen name="comment_layout_padding">5dp</dimen>
+    <dimen name="item_post_margin">5dp</dimen>
+    <dimen name="item_post_layout_padding">10dp</dimen>
+    <dimen name="post_like_margin_left">10dp</dimen>
+    <dimen name="post_like_margin_right">5dp</dimen>
+    <dimen name="inc_post_text_margin_left">5dp</dimen>
+    <dimen name="inc_post_text_margin_top">10dp</dimen>
+    <dimen name="video_layout_height">300dp</dimen>
+    <dimen name="video_view_margin">10dp</dimen>
+    <dimen name="video_thumb_w_h">100dp</dimen>
+
+</resources>

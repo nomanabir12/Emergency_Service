@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/main_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            app:navigationIcon="@drawable/ic_baseline_menu_24"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_margin="@dimen/space_10dp"
+            android:id="@+id/relative"
+            android:layout_marginLeft="@dimen/space_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="@dimen/space_10dp"
+                android:id="@+id/profile_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/hotline"
+                app:civ_border_color="#656444"
+                app:civ_border_width="2dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_5dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/space_8dp">
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Service"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/emailTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xyz@gmail.com"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginRight="@dimen/space_20dp"
+        android:layout_marginLeft="@dimen/space_20dp"
+        android:id="@+id/ley1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout">
+
+        //2
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dailyCheck"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ambulance"></ImageView>
+
+                <TextView
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorAccent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/space_8dp"
+                    android:text="Ambulance"></TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/luckeySpain"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bloodbank"></ImageView>
+
+                <TextView
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorAccent2"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/space_8dp"
+                    android:text="Blood Bank"></TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    //4
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginRight="@dimen/space_20dp"
+        android:layout_marginLeft="@dimen/space_20dp"
+        android:id="@+id/rey2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ley1">
+
+        //2
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card9"
+
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/flame"></ImageView>
+
+                <TextView
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorAccent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/space_8dp"
+                    android:text="Fire Service"></TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/gas"
+
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/gasstation"></ImageView>
+
+                <TextView
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorAccent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/space_8dp"
+                    android:text="Gas Station"></TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    //6
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginRight="@dimen/space_20dp"
+        android:layout_marginLeft="@dimen/space_20dp"
+        android:id="@+id/rey3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rey2">
+
+        //2
+
+        <androidx.cardview.widget.CardView
+android:id="@+id/policestation"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/policestation"></ImageView>
+
+                <TextView
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorAccent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/space_8dp"
+                    android:textSize="12dp"
+                    android:text="Police Station"></TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dpdc"
+
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/electricalpanel"></ImageView>
+
+                <TextView
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorAccent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/space_8dp"
+                    android:textSize="12dp"
+                    android:text="DPDC"></TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+        //8
+        //6
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginRight="@dimen/space_20dp"
+            android:layout_marginLeft="@dimen/space_20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/rey4"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rey3">
+
+            //2
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/wasa"
+
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/wasa"></ImageView>
+
+                    <TextView
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="@color/colorAccent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/space_8dp"
+                        android:textSize="12dp"
+                        android:text="Wasa"></TextView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/medicalDoctor"
+
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/first"></ImageView>
+
+                    <TextView
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="@color/colorAccent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/space_8dp"
+                        android:textSize="12dp"
+                        android:text="Medical Doctor"></TextView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        //10
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginRight="@dimen/space_20dp"
+            android:layout_marginLeft="@dimen/space_20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/rey5"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rey4">
+
+            //2
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/police_2"
+
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/policestation"></ImageView>
+
+                    <TextView
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="@color/colorAccent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/space_8dp"
+                        android:textSize="12dp"
+                        android:text="Police Station"></TextView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/consumer"
+
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/consumer"></ImageView>
+
+                    <TextView
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="@color/colorAccent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/space_8dp"
+                        android:textSize="12dp"
+                        android:text="Consumer Rights"></TextView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        //6
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginRight="@dimen/space_20dp"
+            android:layout_marginLeft="@dimen/space_20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/rey6"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rey5">
+
+            //2
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/child_ma"
+
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/parents"></ImageView>
+
+                    <TextView
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="@color/colorAccent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/space_8dp"
+                        android:textSize="12dp"
+                        android:text="Child Marriage"></TextView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/covid_19"
+
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/coronavirus"></ImageView>
+
+                    <TextView
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="@color/colorAccent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/space_8dp"
+                        android:textSize="12dp"
+                        android:text="Covid-19"></TextView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

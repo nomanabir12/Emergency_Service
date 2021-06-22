@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Register">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/layoutHeader"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ImageView
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_screen_image"
+            ></ImageView>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignUp Account"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/s"
+
+        >
+
+    </TextView>
+    <EditText
+
+        android:layout_below="@id/s"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/text_input_bg"
+        android:id="@+id/Email_Log"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Email"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textAlignment="center"
+
+        android:inputType="textEmailAddress"
+
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Password_Log"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Email_Log"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/text_input_bg"
+
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColor="#000"
+        android:textSize="20dp"
+
+        >
+
+    </EditText>
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/primary_btn_bg"
+        android:layout_below="@+id/Password_Log"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        android:textAllCaps="false"
+        android:text="SignIn"
+
+        >
+
+    </Button>
+
+</RelativeLayout>
